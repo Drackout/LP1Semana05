@@ -1,0 +1,6 @@
+1-classe usada : Stopwatch
+2-instancias : cron1, cron2
+3-não tem variaveis distintas das outras
+4-o estado consiste na contagem de tempo
+5-sim, pode-se alterar o estado
+6-altera-se o estado com start() e stop()
