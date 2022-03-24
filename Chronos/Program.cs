@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Diagnostics;
 
 namespace Chronos
 {
@@ -6,7 +8,21 @@ namespace Chronos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Stopwatch cron1 = new Stopwatch(); 
+            Stopwatch cron2 = new Stopwatch();
+
+            cron1.Start();
+            Thread.Sleep(1000);
+
+            cron2.Start();
+            Thread.Sleep(1000);
+
+            cron1.Stop();
+            cron2.Stop();
+
+            Console.WriteLine(cron1.ElapsedMilliseconds);
+            Console.WriteLine(cron1.ElapsedMilliseconds);
+
         }
     }
 }
