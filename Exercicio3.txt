@@ -1,0 +1,66 @@
+NPC
+  Height
+  Age
+
+Automovel
+  speed
+  brand
+
+Asteroides
+  size
+  breaking
+
+Nave
+  speed
+  fireRate
+
+Cronometro
+  currentTime
+  checkpoint
+
+
+
+NPC1
+  1.75
+  30
+
+NPC2
+  2.89
+  89
+
+
+Automovel1
+  100
+  Fiat
+
+Automovel2
+  45
+  Ferrari
+
+
+Asteroide1
+  50
+  2
+
+Asteroide2
+  200
+  10
+
+
+Nave1
+  100
+  0.5
+
+Nave2
+  50
+  0.1
+
+
+Cronometro1
+  0
+  0
+
+Cronometro2
+  2.22
+  1.11
+
