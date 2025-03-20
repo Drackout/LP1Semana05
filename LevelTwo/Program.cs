@@ -1,5 +1,6 @@
 ﻿using System;
 using Spectre.Console;
+using SoGoodLib;
 
 namespace LevelTwo
 {
@@ -7,6 +8,7 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine(SoGoodClass.SoGoodMethod());
             if (args.Length == 2)
                 ShowImg(args[0], int.Parse(args[1]));
             else
