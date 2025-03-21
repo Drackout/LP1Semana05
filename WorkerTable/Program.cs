@@ -12,7 +12,7 @@ namespace WorkerTable
             // Initialize Bogus for names, functions
             Randomizer.Seed = new Random(int.Parse(args[0]));
             Faker faker = new Faker("pt_PT");
-            
+
             int numEmpregados = int.Parse(args[0]);
 
             // Create table
@@ -27,8 +27,11 @@ namespace WorkerTable
 
             for (int i = 0; i < numEmpregados; i++)
             {
+                // Makes the IndexVariable start on 1.
+                faker.IndexVariable++;
+                
                 // Create rows and Add its values
-                table.AddRow((i+1).ToString(), faker.Name.FullName(), faker.Name.JobTitle());
+                table.AddRow(faker.IndexVariable.ToString(), faker.Name.FullName(), faker.Name.JobTitle());
             }
 
             AnsiConsole.Write(table);
